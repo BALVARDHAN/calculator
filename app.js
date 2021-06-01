@@ -23,11 +23,18 @@ button.forEach((elm,idx,arr)=>{
 })
 
 clear.addEventListener("click",()=>{
+    screen.classList.remove("text-red-600")
     screen.innerHTML = 0;
     beginning = true;
 
 })
 
 equal.addEventListener("click",()=>{
-    screen.innerHTML = eval(screen.innerHTML);
+    try{
+        screen.innerHTML = eval(screen.innerHTML);
+    }
+    catch(e){
+        screen.classList.add("text-red-600");
+        screen.innerHTML = "INALID INPUT";
+    }
 })
