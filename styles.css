@@ -7,3 +7,8 @@
 .titillium-web-font{
     font-family: 'Titillium Web', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+button:active,
+button:focus{
+    border: none;
+    outline: none;
+}
